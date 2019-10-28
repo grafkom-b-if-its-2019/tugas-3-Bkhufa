@@ -1,31 +1,36 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Tugas 1 Grafkom</title>
-    <meta name="author" content="David W Parker">
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<!--    <link href="styles.css" rel="stylesheet" type="text/css"> -->
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tugas 3</title>
+</head>
+<!-- <body style="overflow: hidden;"> -->
+<body >
+  <canvas id="glcanvas" width="800" height="725">
+    Browser Anda tidak mendukung HTML5 <code>&lt;canvas&gt;</code>.
+  </canvas>
 
-  <body>
-    <canvas id="glcanvas">
-      Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
-    </canvas>
+  <!-- Shaders -->
+  <script name="shader" data-src="vertex.glsl" data-type="vertex" data-version="v1"></script>
+  <script name="shader" data-src="fragment.glsl" data-type="fragment" data-version="v1"></script>
 
-    <!-- Shaders -->
-    <script name="shader" data-src="vertex.glsl" data-type="vertex" data-version="v1"></script>
-    <script name="shader" data-src="fragment.glsl" data-type="fragment" data-version="v1"></script>
-    <script name="shader" data-src="vertex2.glsl" data-type="vertex" data-version="v2"></script>
-    <script name="shader" data-src="fragment2.glsl" data-type="fragment" data-version="v2"></script>
+  <script name="shader" data-src="vertexCube.glsl" data-type="vertex" data-version="v2"></script>
+  <script name="shader" data-src="fragmentCube.glsl" data-type="fragment" data-version="v2"></script>
 
-    <!-- Library: Signals processing used for dispatching methods -->
-    <script type="text/javascript" src="vendor/js/signals.js"></script>
+  <script name="shader" data-src="vertex2.glsl" data-type="vertex" data-version="v3"></script>
+  <script name="shader" data-src="fragment2.glsl" data-type="fragment" data-version="v3"></script>
 
-    <!-- Library: our common library -->
-    <script type="text/javascript" src="libs/glUtils.js"></script>
+  <!-- Library untuk men-dispatch methods -->
+  <script type="text/javascript" src="libs/signals.js"></script>
 
-    <!-- This is the bulk of the actual WebGL stuff -->
-    <script type="text/javascript" src="index.js"></script>
-  </body>
+  <!-- JavaScript untuk menghubungkan ke WebGL -->
+  <script type="text/javascript" src="libs/glUtils.js"></script>
+
+  <script type="text/javascript" src="libs/gl-matrix-min.js"></script>
+
+  <!-- JavaScript utama kita -->
+  <script type="text/javascript" src="index.js"></script>
+</body>
 </html>
