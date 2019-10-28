@@ -1,5 +1,5 @@
-Tugas 3
+# Tugas 3
 
-Nama : Bryan Khufa
+### Nama : Bryan Khufa
 
-NRP : 05111740000071
+### NRP : 05111740000071
